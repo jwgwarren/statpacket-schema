@@ -105,7 +105,7 @@
             <plugin>
                 <groupId>org.xolstice.maven.plugins</groupId>
                 <artifactId>protobuf-maven-plugin</artifactId>
-                <version>0.5.1</version>
+                <version>0.6.1</version>
                 <extensions>true</extensions>
                 <configuration>
                     <protocArtifact>com.google.protobuf:protoc:${protobuf.version}:exe:${os.detected.classifier}</protocArtifact>
@@ -119,6 +119,8 @@
                             <goal>test-compile-python</goal>
                             <goal>compile-cpp</goal>
                             <goal>test-compile-cpp</goal>
+                            <goal>compile-js</goal>
+                            <goal>test-compile-js</goal>
                         </goals>
                     </execution>
                 </executions>
